@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alert Box</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="notification" class="notification">
+    <a href="#" target="_blank" rel="noreferrer" class="message">
+      Subscribe now to get the latest updates and exclusive deals!
+    </a>
+    <button id="close-btn" class="close-btn">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" />
+      </svg>
+    </button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><button onclick="window.open('shop.html', '_blank')"><a href="#shop">Shop</a></button></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1>ALOK COLLECTION</h1>
+        <p>Your ONE-STOP Destination For The Latest Trends in Reasonable Rate</p>
+        <button onclick="window.open('shopnow.html', '_blank')"><a href="#shop">Shop Now</a>
+      </button>
+    </section>
+
+    <!-- Shop Section -->
+    <section id="shop" class="shop">
+        <h2>Shop Our Latest Collection</h2>
+        <div class="product-gallery">
+            <div class="product-item">
+                <img src="C:\Users\ADMIN\Pictures" alt="Product 1">
+                <h3>Summer Dress</h3>
+                <p>$49.99</p>
+                <button onclick="window.open('Add_to_cart.html', '_blank')">Add To Cart</button>
+                
+                <html lang="en">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Add to Cart Example</title>
+                    <style>
+                        body {
+                            font-family: Arial, sans-serif;
+                        }
+                        .cart-popup {
+                            display: none;
+                            position: fixed;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            width: 300px;
+                            padding: 20px;
+                            background-color: white;
+                            border: 2px solid #ccc;
+                            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+                            text-align: center;
+                        }
+                        .cart-popup h2 {
+                            margin-bottom: 20px;
+                        }
+                        .cart-popup p {
+                            margin: 10px 0;
+                        }
+                        .cart-popup button {
+                            padding: 10px 20px;
+                            background-color: #4CAF50;
+                            color: white;
+                            border: none;
+                            cursor: pointer;
+                        }
+                        .cart-popup button:hover {
+                            background-color: #45a049;
+                        }
+                        .close-btn {
+                            margin-top: 10px;
+                            padding: 5px 10px;
+                            background-color: #f44336;
+                            color: white;
+                            border: none;
+                            cursor: pointer;
+                        }
+                        .close-btn:hover {
+                            background-color: #e53935;
+                        }
+                    </style>
+                </head>
+                <body>
+                
+                    <!-- Button to trigger the Add to Cart popup -->
+                    
+                    
+                
+                    <!-- Cart Popup -->
+                    <div id="cartPopup" class="cart-popup">
+                        <h2>Item Added to Cart</h2>
+                        <p>Product Name: Super Widget</p>
+                        <p>Price: $19.99</p>
+                        <button onclick="checkout()">Proceed to Checkout</button>
+                        <button class="close-btn" onclick="closeCartPopup()">Close</button>
+                    </div>
+                
+                    <script>
+                        // Function to show the cart popup
+                        function showCartPopup() {
+                            document.getElementById('cartPopup').style.display = 'block';
+                        }
+                
+                        // Function to close the cart popup
+                        function closeCartPopup() {
+                            document.getElementById('cartPopup').style.display = 'none';
+                        }
+                
+                        // Function to simulate proceeding to checkout
+                        function checkout() {
+                            alert("Proceeding to checkout...");
+                        }
+                    </script>
+                
+                </body>
+                
+                            </div>
+            <div class="product-item">
+                <img src="img/product2.jpg" alt="Product 2">
+                <h3>Leather Jacket</h3>
+                <p>$89.99</p>
+                <!DOCTYPE html>
+                  <html lang="en">
+                  <head>
+                      <meta charset="UTF-8">
+                      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                      <title>Add to Cart Example</title>
+                      <style>
+                          body {
+                              font-family: Arial, sans-serif;
+                          }
+                          .cart-popup {
+                              display: none;
+                              position: fixed;
+                              top: 50%;
+                              left: 50%;
+                              transform: translate(-50%, -50%);
+                              width: 300px;
+                              padding: 20px;
+                              background-color: white;
+                              border: 2px solid #ccc;
+                              box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+                              text-align: center;
+                          }
+                          .cart-popup h2 {
+                              margin-bottom: 20px;
+                          }
+                          .cart-popup p {
+                              margin: 10px 0;
+                          }
+                          .cart-popup button {
+                              padding: 10px 20px;
+                              background-color: #4CAF50;
+                              color: white;
+                              border: none;
+                              cursor: pointer;
+                          }
+                          .cart-popup button:hover {
+                              background-color: #45a049;
+                          }
+                          .close-btn {
+                              margin-top: 10px;
+                              padding: 5px 10px;
+                              background-color: #f44336;
+                              color: white;
+                              border: none;
+                              cursor: pointer;
+                          }
+                          .close-btn:hover {
+                              background-color: #e53935;
+                          }
+                      </style>
+                  </head>
+                  <body>
+                  
+                      <!-- Button to trigger the Add to Cart popup -->
+                      <button onclick="showCartPopup()">Add to Cart</button>
+                  
+                      <!-- Cart Popup -->
+                      <div id="cartPopup" class="cart-popup">
+                          <h2>Item Added to Cart</h2>
+                          <p>Product Name: Super Widget</p>
+                          <p>Price: $19.99</p>
+                          <button onclick="checkout()">Proceed to Checkout</button>
+                          <button class="close-btn" onclick="closeCartPopup()">Close</button>
+                      </div>
+                  
+                      <script>
+                          // Function to show the cart popup
+                          function showCartPopup() {
+                              document.getElementById('cartPopup').style.display = 'block';
+                          }
+                  
+                          // Function to close the cart popup
+                          function closeCartPopup() {
+                              document.getElementById('cartPopup').style.display = 'none';
+                          }
+                  
+                          // Function to simulate proceeding to checkout
+                          function checkout() {
+                              alert("Proceeding to checkout...");
+                          }
+                      </script>
+                  
+                  </body>
+                  
+                  
+            </div>
+            <div class="product-item">
+                <img src="img/product3.jpg" alt="Product 3">
+                <h3>Classic Jeans</h3>
+                <p>$39.99</p>
+                <!DOCTYPE html>
+                  <html lang="en">
+                  <head>
+                      <meta charset="UTF-8">
+                      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                      <title>Track My Product</title>
+                      <style>
+                          body {
+                              font-family: Arial, sans-serif;
+                          }
+                          .cart-popup {
+                              display: none;
+                              position: fixed;
+                              top: 50%;
+                              left: 50%;
+                              transform: translate(-50%, -50%);
+                              width: 300px;
+                              padding: 20px;
+                              background-color: white;
+                              border: 2px solid #ccc;
+                              box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+                              text-align: center;
+                          }
+                          .cart-popup h2 {
+                              margin-bottom: 20px;
+                          }
+                          .cart-popup p {
+                              margin: 10px 0;
+                          }
+                          .cart-popup button {
+                              padding: 10px 20px;
+                              background-color: #4CAF50;
+                              color: white;
+                              border: none;
+                              cursor: pointer;
+                          }
+                          .cart-popup button:hover {
+                              background-color: #45a049;
+                          }
+                          .close-btn {
+                              margin-top: 10px;
+                              padding: 5px 10px;
+                              background-color: #f44336;
+                              color: white;
+                              border: none;
+                              cursor: pointer;
+                          }
+                          .close-btn:hover {
+                              background-color: #e53935;
+                          }
+                      </style>
+                  </head>
+                  <body>
+                  
+                      <!-- Button to trigger the Add to Cart popup -->
+                      <button onclick="showCartPopup()">Add to Cart</button>
+                  
+                      <!-- Cart Popup -->
+                      <div id="cartPopup" class="cart-popup">
+                          <h2>Item Added to Cart</h2>
+                          <p>Product Name: Super Widget</p>
+                          <p>Price: $19.99</p>
+                          <button onclick="checkout()">Proceed to Checkout</button>
+                          <button class="close-btn" onclick="closeCartPopup()">Close</button>
+                      </div>
+                  
+                      <script>
+                          // Function to show the cart popup
+                          function showCartPopup() {
+                              document.getElementById('cartPopup').style.display = 'block';
+                          }
+                  
+                          // Function to close the cart popup
+                          function closeCartPopup() {
+                              document.getElementById('cartPopup').style.display = 'none';
+                          }
+                  
+                          // Function to simulate proceeding to checkout
+                          function checkout() {
+                              alert("Proceeding to checkout...");
+                          }
+                      </script>
+                  
+                  </body>
+                  
+                  
+            </div>
+        </div>
+    </section>
+    
+    <body>
+      <button onclick="window.open('trackproduct.html', '_blank')">Track My Order</button>
+      </body>
+      <body>
+        <button onclick="window.open('addproduct.html', '_blank')">Add Product</button>
+        </body>
+    <!-- About Us Section -->
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p><li>We are a passionate fashion brand offering trendy and stylish clothing for all occasions.</li>
+
+          <li>alokcollec200431@gmail.com</li>
+          
+          <li>sawta complex,near bus stand,Bhoje.Pachora.
+          Jalgaon-425001</li>
+          <li>INSTAGRAM : @alock_collectionbhoje</li>
+        </p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Fashion Hub. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Shopping Cards</title>
+  </head>
+  </body>
+</html>
