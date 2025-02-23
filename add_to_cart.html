@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add to Cart Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .cart-popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 300px;
+            padding: 20px;
+            background-color: white;
+            border: 2px solid #ccc;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .cart-popup h2 {
+            margin-bottom: 20px;
+        }
+        .cart-popup p {
+            margin: 10px 0;
+        }
+        .cart-popup button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .cart-popup button:hover {
+            background-color: #45a049;
+        }
+        .close-btn {
+            margin-top: 10px;
+            padding: 5px 10px;
+            background-color: #f44336;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .close-btn:hover {
+            background-color: #e53935;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Button to trigger the Add to Cart popup -->
+    <button onclick="showCartPopup()">Add to Cart</button>
+
+    <!-- Cart Popup -->
+    <div id="cartPopup" class="cart-popup">
+        <h2>Item Added to Cart</h2>
+        <p>Product Name: Super Widget</p>
+        <p>Price: $19.99</p>
+        <button onclick="checkout()">Proceed to Checkout</button>
+        <button class="close-btn" onclick="closeCartPopup()">Close</button>
+    </div>
+
+    <script>
+        // Function to show the cart popup
+        function showCartPopup() {
+            document.getElementById('cartPopup').style.display = 'block';
+        }
+
+        // Function to close the cart popup
+        function closeCartPopup() {
+            document.getElementById('cartPopup').style.display = 'none';
+        }
+
+        // Function to simulate proceeding to checkout
+        function checkout() {
+            alert("Proceeding to checkout...");
+        }
+    </script>
+
+</body>
+</html>
